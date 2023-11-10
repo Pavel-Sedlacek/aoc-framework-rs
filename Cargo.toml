@@ -1,0 +1,37 @@
+[package]
+name = "aoc-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "crates/scaffold/aoc-base-types",
+    "crates/macros/aoc-finalize",
+    "crates/macros/aoc-year",
+    "crates/macros/aoc-initialize",
+    "crates/macros/aoc-benchmarks",
+    "crates/macros/aoc-solution",
+    "crates/macros/aoc-parser",
+    "crates/aoc-parsers",
+    "crates/scaffold/aoc-input-loader",
+
+    "crates/solutions/aoc-2015",
+
+    "crates/helpers/aoc-iter-tools",
+    "crates/helpers/aoc-linear-algebra",
+    "crates/helpers/aoc-topology",
+    "crates/helpers/aoc-acting-closures",
+    "crates/helpers/aoc-cryptography",
+]
+
+[dependencies]
+aoc-initialize = { path = "crates/macros/aoc-initialize" }
+aoc-finalize = { path = "crates/macros/aoc-finalize" }
+aoc-year = { path = "crates/macros/aoc-year" }
+aoc-timers = { path = "crates/scaffold/aoc-timers" }
+aoc-benchmarks = { path = "crates/macros/aoc-benchmarks" }
+
+
+aoc-2015 = { path = "crates/solutions/aoc-2015" }

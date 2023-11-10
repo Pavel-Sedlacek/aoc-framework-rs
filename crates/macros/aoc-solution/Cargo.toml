@@ -1,0 +1,16 @@
+[package]
+name = "aoc-solution"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quote = "*"
+syn = { version = "2.0", features = ["full"] }
+attribute-derive = "*"
+aoc-base-types = { path = "../../scaffold/aoc-base-types" }
+
+
+[lib]
+proc-macro=true

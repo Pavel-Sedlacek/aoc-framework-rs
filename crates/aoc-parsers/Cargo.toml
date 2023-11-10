@@ -1,0 +1,10 @@
+[package]
+name = "aoc-parsers"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aoc-parser = { path = "../macros/aoc-parser" }
+aoc-linear-algebra = { path = "../helpers/aoc-linear-algebra" }
