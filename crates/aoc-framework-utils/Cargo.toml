@@ -3,6 +3,13 @@ name = "aoc-framework-utils"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = [ "Pavel Sedlacek <sedlacek.pavel@pm.me>" ]
+description = "Utilities such as data types, algorithms and functions for aoc-framework-rs"
+repository = "https://github.com/Pavel-Sedlacek/aoc-framework-rs/tree/master/crates/aoc-framework-utils"
+
+license = "MIT"
+
+keywords = [ "adventofcode", "aoc", "framework" ]
+categories = [ "development-tools", "data-structures", "algorithms" ]
 
 [dependencies]

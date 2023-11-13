@@ -3,7 +3,14 @@ name = "aoc-framework-parsers"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = [ "Pavel Sedlacek <sedlacek.pavel@pm.me>" ]
+description = "Compilation of input parsers for aoc-framework-rs"
+repository = "https://github.com/Pavel-Sedlacek/aoc-framework-rs/tree/master/crates/aoc-framework-parsers"
+
+license = "MIT"
+
+keywords = [ "adventofcode", "aoc", "framework" ]
+categories = [ "development-tools", "data-structures", "algorithms" ]
 
 [dependencies]
-aoc-framework-parsers = "0.1.0"
+aoc-framework-macros = "0.1.0"
