@@ -22,7 +22,7 @@ members = [
 ]
 
 [dependencies]
-#aoc-framework-parsers = "0.1.0"
-#aoc-framework-utils = "0.1.0"
-#aoc-framework-core = "0.1.0"
-#aoc-framework-macros = "0.1.0"
+aoc-framework-parsers = "0.1.0"
+aoc-framework-utils = "0.1.0"
+aoc-framework-core = "0.1.0"
+aoc-framework-macros = "0.1.0"

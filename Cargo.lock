@@ -25,6 +25,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "aoc-framework-core"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "35b81ff6ed9d2ac34307f70d505f11f4060c6890198e50a44c58903a404daf91"
+dependencies = [
+ "reqwest",
+]
+
+[[package]]
 name = "aoc-framework-macros"
 version = "0.1.0"
 dependencies = [
@@ -34,16 +43,51 @@ dependencies = [
 ]
 
 [[package]]
+name = "aoc-framework-macros"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "836aec0d458834af9882bc1fd9bc0d74fbf3ab556e6f7ebad8fde857af2f62b1"
+dependencies = [
+ "attribute-derive",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "aoc-framework-parsers"
 version = "0.1.0"
+dependencies = [
+ "aoc-framework-macros 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "aoc-framework-parsers"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "675c03c10c828828e0e324f83d36d56a0f356e6859a9327b268fb546516da2af"
+dependencies = [
+ "aoc-framework-macros 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "aoc-framework-rs"
+version = "0.1.0"
+dependencies = [
+ "aoc-framework-core 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aoc-framework-macros 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aoc-framework-parsers 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "aoc-framework-utils 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "aoc-framework-utils"
 version = "0.1.0"
 
 [[package]]
 name = "aoc-framework-utils"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a6202ac250c5ea03e9e9c59b059172a8396b7fee0b3c53835988762cfaa43e01"
 
 [[package]]
 name = "attribute-derive"
