@@ -1,3 +1,8 @@
+use attribute_derive::Attribute;
+use proc_macro::{TokenStream, Span};
+use syn::{parse_macro_input, ItemFn, Ident};
+use quote::quote;
+
 pub mod types;
 pub mod web_io;
 
@@ -24,10 +29,6 @@ pub fn aoc_solution(attr: TokenStream, item: TokenStream) -> TokenStream {
 
     a.into()
 }
-
-use attribute_derive::Attribute;
-use proc_macro::{TokenStream, Ident, Span};
-use syn::{parse_macro_input, ItemFn};
 
 #[derive(Attribute)]
 #[attribute(ident = aoc_solution)]
