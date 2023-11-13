@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 aoc-linear-algebra = { path = "../aoc-linear-algebra" }
-num = "*"
+num = "0.4.1"

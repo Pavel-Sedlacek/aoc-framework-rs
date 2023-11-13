@@ -2,7 +2,13 @@
 name = "aoc-framework-rs"
 version = "0.1.0"
 edition = "2021"
-
+authors = [ "Pavel Sedlacek <sedlacek.pavel@pm.me>" ]
+description = "A framework for AdventOfCode coding competition, that handles input, output and provides some core utilities."
+repository = "https://github.com/Pavel-Sedlacek/aoc-framework-rs"
+readme = "README.md"
+license-file = "LICENSE.txt"
+keywords = [ "adventofcode", "aoc", "framework" ]
+categories = [ "development-tools", "data-structures", "algorithms" ]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
@@ -28,21 +34,21 @@ members = [
 ]
 
 [dependencies]
-aoc-base-types = { path = "crates/scaffold/aoc-base-types" }
-aoc-input-loader = { path = "crates/scaffold/aoc-input-loader" }
-aoc-timers = { path = "crates/scaffold/aoc-timers" }
+aoc-base-types = { path = "crates/scaffold/aoc-base-types", version = "0.1.0" }
+aoc-input-loader = { path = "crates/scaffold/aoc-input-loader", version = "0.1.0" }
+aoc-timers = { path = "crates/scaffold/aoc-timers", version = "0.1.0" }
 
-aoc-finalize = { path = "crates/macros/aoc-finalize" }
-aoc-year = { path = "crates/macros/aoc-year" }
-aoc-initialize = { path = "crates/macros/aoc-initialize" }
-aoc-benchmarks = { path = "crates/macros/aoc-benchmarks" }
-aoc-solution = { path = "crates/macros/aoc-solution" }
-aoc-parser = { path = "crates/macros/aoc-parser" }
+aoc-finalize = { path = "crates/macros/aoc-finalize", version = "0.1.0" }
+aoc-year = { path = "crates/macros/aoc-year", version = "0.1.0" }
+aoc-initialize = { path = "crates/macros/aoc-initialize", version = "0.1.0" }
+aoc-benchmarks = { path = "crates/macros/aoc-benchmarks", version = "0.1.0" }
+aoc-solution = { path = "crates/macros/aoc-solution", version = "0.1.0" }
+aoc-parser = { path = "crates/macros/aoc-parser", version = "0.1.0" }
 
-aoc-parsers   = { path = "crates/aoc-parsers" }
+aoc-parsers   = { path = "crates/aoc-parsers", version = "0.1.0" }
 
-aoc-iter-tools = { path = "crates/utils/aoc-iter-tools" }
-aoc-linear-algebra = { path = "crates/utils/aoc-linear-algebra" }
-aoc-topology = { path = "crates/utils/aoc-topology" }
-aoc-acting-closures = { path = "crates/utils/aoc-acting-closures" }
-aoc-cryptography = { path = "crates/utils/aoc-cryptography" }
+aoc-iter-tools = { path = "crates/utils/aoc-iter-tools", version = "0.1.0" }
+aoc-linear-algebra = { path = "crates/utils/aoc-linear-algebra", version = "0.1.0" }
+aoc-topology = { path = "crates/utils/aoc-topology", version = "0.1.0" }
+aoc-acting-closures = { path = "crates/utils/aoc-acting-closures", version = "0.1.0" }
+aoc-cryptography = { path = "crates/utils/aoc-cryptography", version = "0.1.0" }
