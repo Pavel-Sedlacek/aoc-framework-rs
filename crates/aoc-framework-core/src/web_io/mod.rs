@@ -1,5 +1,5 @@
 use std::fs::{create_dir, File, read_to_string, write};
-use std::io::{Read, Write};
+use std::io::Read;
 use std::path::Path;
 
 pub struct AoCInputLoader {
