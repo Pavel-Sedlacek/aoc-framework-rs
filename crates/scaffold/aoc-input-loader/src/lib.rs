@@ -28,7 +28,7 @@ impl AoCInputLoader {
     }
 
     fn download(&self) -> Option<String> {
-        let cookie = format!("session={}", "53616c7465645f5f2db288a81f635fcf11dbdd8b601493a8a399af4792f38c78efe9371f148a2bcd90a868ba506d4f7efd4bdde761933ef687d73d793b294465");
+        let cookie = format!("session={}", "YOUR_SESSION_TOKEN");
         let url = "https://adventofcode.com/".parse::<reqwest::Url>().expect("Invalid URL");
         let jar = reqwest::cookie::Jar::default();
         jar.add_cookie_str(&cookie, &url);

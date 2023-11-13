@@ -1,5 +1,5 @@
 [package]
-name = "aoc-rs"
+name = "aoc-framework-rs"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,30 +8,41 @@ edition = "2021"
 [workspace]
 members = [
     "crates/scaffold/aoc-base-types",
+    "crates/scaffold/aoc-input-loader",
+    "crates/scaffold/aoc-timers",
+
     "crates/macros/aoc-finalize",
     "crates/macros/aoc-year",
     "crates/macros/aoc-initialize",
     "crates/macros/aoc-benchmarks",
     "crates/macros/aoc-solution",
     "crates/macros/aoc-parser",
+
     "crates/aoc-parsers",
-    "crates/scaffold/aoc-input-loader",
 
-    "crates/solutions/aoc-2015",
-
-    "crates/helpers/aoc-iter-tools",
-    "crates/helpers/aoc-linear-algebra",
-    "crates/helpers/aoc-topology",
-    "crates/helpers/aoc-acting-closures",
-    "crates/helpers/aoc-cryptography",
+    "crates/utils/aoc-iter-tools",
+    "crates/utils/aoc-linear-algebra",
+    "crates/utils/aoc-topology",
+    "crates/utils/aoc-acting-closures",
+    "crates/utils/aoc-cryptography",
 ]
 
 [dependencies]
-aoc-initialize = { path = "crates/macros/aoc-initialize" }
+aoc-base-types = { path = "crates/scaffold/aoc-base-types" }
+aoc-input-loader = { path = "crates/scaffold/aoc-input-loader" }
+aoc-timers = { path = "crates/scaffold/aoc-timers" }
+
 aoc-finalize = { path = "crates/macros/aoc-finalize" }
 aoc-year = { path = "crates/macros/aoc-year" }
-aoc-timers = { path = "crates/scaffold/aoc-timers" }
+aoc-initialize = { path = "crates/macros/aoc-initialize" }
 aoc-benchmarks = { path = "crates/macros/aoc-benchmarks" }
+aoc-solution = { path = "crates/macros/aoc-solution" }
+aoc-parser = { path = "crates/macros/aoc-parser" }
 
+aoc-parsers   = { path = "crates/aoc-parsers" }
 
-aoc-2015 = { path = "crates/solutions/aoc-2015" }
+aoc-iter-tools = { path = "crates/utils/aoc-iter-tools" }
+aoc-linear-algebra = { path = "crates/utils/aoc-linear-algebra" }
+aoc-topology = { path = "crates/utils/aoc-topology" }
+aoc-acting-closures = { path = "crates/utils/aoc-acting-closures" }
+aoc-cryptography = { path = "crates/utils/aoc-cryptography" }
