@@ -13,7 +13,7 @@ keywords = [ "adventofcode", "aoc", "framework" ]
 categories = [ "development-tools", "data-structures", "algorithms" ]
 
 [dependencies]
-quote = "*"
+quote = "1.0.33"
 syn = { version = "2.0", features = ["full"] }
 attribute-derive = "0.8.1"
 
